@@ -1,0 +1,96 @@
+html {
+  font-family: 'Inter', sans-serif;
+  background-image: linear-gradient(#5DA4D9, #FFF);
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.app {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: .75rem;
+  grid-template-areas: 
+  "h h"
+  "ec ec"
+  "i i"
+  "gb1 gb2"
+  "rb1 rb2";
+  
+}
+
+.emoji-container {
+  margin: 15px;
+  text-align: center;
+  grid-area: ec;
+}
+
+.emoji-container span {
+  margin: 10px;
+  font-size: 60px;
+}
+
+.push {
+  background-color: #80D87F;
+  grid-area: gb1;
+  justify-self: flex-end;
+  margin: 0 0 10px 0;
+}
+
+.unshift {
+  background-color: #80D87F;
+  grid-area: gb2;
+  margin-bottom: 10px;
+  margin: 0 0 10px 0;
+}
+
+.shift {
+  background-color: #E23349;
+  grid-area: rb2;
+  justify-self: flex-start;
+  margin: 0 0 10px 0;
+}
+
+.pop {
+  background-color: #E23349;
+  grid-area: rb1;
+  margin: 0 0 10px 0;
+  justify-self: flex-end;
+}
+
+h1 {
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  grid-area: h;
+  margin: 0;
+}
+
+input {
+  margin: 0 auto;
+  border: none;
+  height: 30px;
+  background: white;
+  border-radius: 6px;
+  text-align: center;
+  grid-area: i;
+}
+
+button {
+  background: darkcyan;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin: 0 4px;
+  width: fit-content;
+  height: fit-content;
+  font-weight: bold;
+}
+
+
+
